@@ -10,8 +10,7 @@ public class LaunchTest extends Configuration {
     @Test
     public void launchTest(){
 
-        String version = new SplashScreen(driver).getCurrencyVersion();
+        String version =  new SplashScreen(driver).getCurrencyVersion();
         Assert.assertEquals(version,"0.0.3");
-
     }
 }

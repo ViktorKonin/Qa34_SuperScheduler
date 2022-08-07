@@ -15,4 +15,11 @@ public class SplashScreen extends BaseScreen{
     public String getCurrencyVersion(){
         return versionTextView.getText();
     }
+
+    public LoginScreen checkCurrencyVersion(String version){
+        shoutHave(versionTextView,version,10);
+
+        return new LoginScreen(driver);
+
+    }
 }

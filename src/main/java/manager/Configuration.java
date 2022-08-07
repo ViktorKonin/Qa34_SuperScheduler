@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeSuite;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import static com.google.gson.internal.bind.TypeAdapters.URL;
+
 
 //"platformName": "Android",
 // "deviceName": "Nex",
@@ -30,6 +32,7 @@ public class Configuration {
       capabilities.setCapability("app","C:\\Apk\\v.0.0.3.apk");
 
       driver=new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+
 
    }
 
